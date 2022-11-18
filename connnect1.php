@@ -13,6 +13,9 @@ try {
     $dbh = new PDO("mysql:host=localhost;dbname=sample_db", $user, $password, $opt);
     //SQL文
     $sql="SELECT title, author From books1";
+    //$sql1="INSERT INTO books1 (id,title,isbn,price,publish,author). VALUES(NULL,'データベースの本',221323222,2600,'2021-5-18','伊藤');";
+    //$dbh->query(sql1);
+    //var_dump($statement2);
     //PDOのquery()でSQLを実行
     $statement=$dbh->query($sql);
 

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form method="post" action="connect2.php">
+    <p>
+        <label>タイトル（必須・200字まで）：</label>
+        <input type="text" name="title">
+    </p>
+    <p>
+        <label>ISBNコード（13桁まで）：</label>
+        <input type="text" name="isbn">
+    </p>
+    <p>
+        <label>定価（6桁までの数字）：</label>
+        <input type="text" name="price">
+    </p>
+    <p>
+        <label>出版日（YYYY-MM-DD形式）：</label>
+        <input type="text" name="publish">
+    </p>
+    <p>
+        <label>著者（80文字まで）：</label>
+        <input type="text" name="author">
+    </p>
+    <input type="submit" value="送信">
+</form>
+</body>
+</html>
